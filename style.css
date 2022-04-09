@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+
+body {
+    background-color: #07071a;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    animation: stars 30s linear infinite;
+    background-size: 100% auto;
+    margin: auto;  
+    align-items: center;
+    font-family: space mono, monospace;
+}
+
+@keyframes stars {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      /* the size of the background image */
+      background-position: 798px -798px;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: gainsboro;
+    animation: affiche 0.8s ease-out;
+    font-size: 1.1cm;
+    font-family: oswald, sans-serif;
+    font-size: 80px;
+}
+
+
+.Sous-Titre {
+  text-align: center;
+  color:black;
+  font-size: 1.5cm;
+  animation: affiche 0.8s ease-out;
+    font-family: anek odia, sans-serif;
+}
+
+.Sous-Titre-follow {
+  text-align: center;
+  color:whitesmoke;
+  font-size:1.2cm;
+  animation: affiche 0.8s ease-out;
+    font-family: anek odia, sans-serif;
+}
+@keyframes affiche {
+  from {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+p {
+  font-size: 0.5cm;
+  color: rgb(0, 0, 0);
+  margin-left: 5%;
+  margin-right: 5%;
+  animation: affiche 0.8s ease-out;
+    font-family: space mono, monospace;
+}
+
+
+.image{
+  background-attachment: fixed;
+  width:14%;
+  height:  15%;
+  margin-left: 2cm;
+  position:absolute;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: affiche 0.8s ease-out;
+}
+
+.image2{
+  background-attachment: fixed;
+  width:14%;
+  height:15%;
+  position:absolute;
+  margin-left: 82%;
+  margin-top: 45%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: affiche 0.8s ease-out;
+}
+
+.image3{
+  background-attachment: fixed;
+  width:14%;
+  height:15%; 
+  position:absolute;
+  margin-left: 74%;
+  margin-top: 6%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: affiche 0.8s ease-out;
+}
+
+.Photo{
+  background-repeat: no-repeat;
+  background-position: center;
+    margin-bottom: 10;
+    margin-top: -3%;
+  width:25%;
+  height:50%;
+  border-radius: 50%;
+  animation: pulse 1.3s infinite;
+  box-shadow: 0px 0px 10px black;
+}
+
+@keyframes pulse {
+  to {
+      box-shadow: 0 0 0 18px rgba(0,0,0,0.01);
+  }
+  
+}
+
+#Titre{
+  border-radius: 50%;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: -3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
+  box-shadow: 0px 0px 0px white;
+  animation: affiche 0.8s ease-out;
+    border-style: none!important;
+}
+
+#profil {   
+  background-color:lightgray;
+  border-radius: 90px;
+  text-align:center;
+  padding:50px;
+  padding-top:5px;
+  padding-bottom:15px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 1.5cm;
+  border: 4px solid rgb(43, 43, 44);
+  box-shadow: 0px 0px 35px white;
+  z-index: 1;
+  animation: affiche 0.8s ease-out;
+}
+
+.School{
+  color: white;
+  background-color: #0096bb;
+  padding: 10px 15px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  box-shadow: 0px 0px 25px black;
+  border-radius: 90px;
+}
+
+.instanw{
+  color: white;
+  background-color: #f9b037;
+  padding: 10px 15px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  box-shadow: 0px 0px 25px black;
+  border-radius: 90px;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+#Follow {
+  background-color: none;
+  border-radius: 90px;
+  text-align:center;
+  padding:50px;
+  padding-top:5px;
+  padding-bottom:15px;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
+  margin-top: 1.5cm;
+  border: 4px solid rgb(43, 43, 44);
+  box-shadow: 0px 0px 20px white;
+  z-index: 1;
+  animation: affiche 0.8s ease-out;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  list-style-type: none;
+  margin: 0 20px;
+  cursor: pointer;
+  margin-left: 9.5%;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a .fa {
+  font-size: 6em;
+  color: whitesmoke;
+}    
+
+ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 6em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:nth-child(1)::before {
+  content: '\f099';
+  color: #1da1f2;
+  border-bottom: 4px solid #1da1f2;
+  border-radius: 5px;
+  pointer-events: none;
+  padding: 0;
+}
+
+ul li:nth-child(2)::before {
+  content: '\f16d';
+  color: #9340ac;
+  border-bottom: 4px solid #9340ac;
+  border-radius: 5px;
+  pointer-events: none;
+  padding: 0;
+}
+
+ul li:nth-child(3)::before {
+  content: '\f16a';
+  color: #ff0000;
+  border-bottom: 4px solid #ff0000;
+  border-radius: 5px;
+  pointer-events: none;
+  padding: 0;
+}
+
+ul li:hover::before {
+  height: 100%;
+}
