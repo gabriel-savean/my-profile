@@ -1,0 +1,16 @@
+body {
+  background-color: #f2f2f2; /* Couleur de fond de la page */
+  margin: 0; /* Enlever les marges par défaut */
+  padding: 0; /* Enlever les paddings par défaut */
+}
+
+#canvas {
+  width: 300px; /* Largeur du canvas */
+  height: 300px; /* Hauteur du canvas */
+  background-color: #ccc; /* Couleur de fond du canvas */
+  position: absolute; /* Position absolue pour centrer le canvas */
+  left: 50%; /* Centrer horizontalement */
+  top: 50%; /* Centrer verticalement */
+  transform: translate(-50%, -50%); /* Translater le canvas de moitié de sa taille pour le centrer */
+  border: 2px solid #333; /* Ajouter une bordure au canvas */
+}
