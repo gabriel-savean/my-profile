@@ -1,1 +1,37 @@
-aaa
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dessin</title>
+  <style>
+    #canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let isDrawing = false;
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+canvas.addEventListener("mousedown", (e) => {
+  isDrawing = true;
+  ctx.moveTo(e.clientX, e.clientY);
+});
+
+canvas.addEventListener("mousemove", (e) => {
+  if (isDrawing === true) {
+    ctx.lineTo(e.clientX, e.clientY);
+    ctx.stroke();
+  }
+});
+
+canvas.addEventListener("mouseup", () => {
+  isDrawing = false;
+});
