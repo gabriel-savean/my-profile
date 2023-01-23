@@ -262,3 +262,17 @@ ul li:nth-child(3)::before {
 ul li:hover::before {
   height: 100%;
 }
+
+input[type="button"] {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
